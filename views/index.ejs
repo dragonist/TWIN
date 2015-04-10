@@ -5,7 +5,22 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+  	<header>
+  		<a href="/">home</a>
+  		<% if (userId){ %>
+  			<a href="/users/edit">회원정보 수정</a>
+  			<a href="/users/logout">로그아웃</a>
+  		<% } else { %>	
+	  		<a href="/users/signIn">회원가입</a>
+    		<a href="/users/login">로그인</a>
+    	<% } %>
+  	</header>
+  	<section>
+	    <h1><%= title %></h1>
+	    <p>Welcome to <%= title %></p>
+      <a href="/play/1">일인용</a>
+      <a href="/play/2">이인용</a>
+      <a href="/score">Score </a>
+	    <a href="/howto">HOW to ?</a>
+  	</section>
 </html>
