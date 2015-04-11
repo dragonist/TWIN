@@ -4,8 +4,10 @@
 	<title>Document</title>
 </head>
 <body>
-	<form action="/user/signIn" method="post">
-		<input type="text">
+	<form action="/users/signIn" method="post">
+		<input type="text" name="userId" placeholder="아이디">
+		<input type="password" name="password" placeholder="비밀번호">
+		<input type="submit" name="submit" value="회원가입">
 	</form>
 </body>
 </html>
